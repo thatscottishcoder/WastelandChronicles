@@ -1,0 +1,514 @@
+<html>
+<head>
+
+<title>Wasteland Chronicles:</title>
+
+<script src="https://www.avivaworld.com/sites/KB/SiteAssets/JS/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<script>
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+
+<style>
+
+.header {
+    margin-bottom: 0px; 
+    background-color: #ffffff; 
+    color: #000000; 
+    height: 50px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    font-size: 24px; 
+    font-weight: 600;
+}
+.header span {vertical-align:-20px;}
+
+.tab {overflow: hidden; border-top:none; border-right:none; border-left:none; border-bottom: 3px solid #000000; background-color: #ffffff; border-radius:0px;}
+.tab button {
+	background-color: #ffffff;
+	color: #000000;
+	float: left;
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-top: 2px solid #000000;
+	border-bottom: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.3s;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0px 0px -1px -1px;
+	border-radius: 7px 7px 0px 0px;
+}
+.tab button:hover {background-color: #000000; color: #ffffff;}
+.tab button.active {background-color: #000000; color:#ffffff;}
+.tabcontent {display: none;	padding: 0px !important; border-top: none; border:none;}
+
+.box {color: black; background-color: inherit; border-color: #000000; border: 2px #000000 solid; border-radius:5px; margin: 15px; padding-bottom: 5px;}
+.box-header {color: #ffffff; background-color: #000000; height: 2vh; font-weight: bold !important; border-bottom: 2px #000000 solid; padding: 10px 0px 10px 0px;}
+
+ul {margin-top: 1px; margin-bottom: 1px;}
+ol {margin-top: 1px; margin-bottom: 1px;}
+li {padding: 3px; font-weight:normal;}
+p {padding: 5px 0px 5px 20px; margin: auto;}
+h4 {margin: auto; padding-left: 20px;}
+hr {border: none; height: 2px; width: 70vw; margin-left: 1vw; background: none;}
+hr::after {content: ""; display: block; height: 2px; border-top: 1px dashed #000000;}
+
+.maintable {font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; width: 50%; margin: auto; margin-left: 1vw;}
+.maintable td, th {border: 1px solid #ddd; padding: 8px;}
+.maintable tr:nth-child(even){background-color: #f2f2f2;}
+.maintable tr:hover {background-color: #ddd;}
+.maintable th {padding-top: 12px; padding-bottom: 12px; text-align: left; background-color: #d1d1d1; color: black;}
+
+</style>
+
+</head>
+<body>
+
+<div class="header"><span> &#128165; &#128128; Wasteland Chronicles: The Fallen Saga &#128128; &#128165;</span></div>
+<div class="tab">
+    <button class="tablinks" type='button' onclick="openTab(event, 'Overview')">Overview</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'ProblemStatement')">Problem Statement</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'StakeholderAnalysis')">Stakeholder Analysis</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'RequirementAnalysis')">Requirement Analysis</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'RequirementsSurvey')">Requirements Survey</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'ProjectMethodology')">Project Methodology</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'UserStories')">User Stories</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'ToDoTasks')">To Do Tasks</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'Wireframes')">Wireframes</button>
+    <button class="tablinks" type='button' onclick="openTab(event, 'Test')">Test Case Examples</button>
+</div>
+
+    <!-- Overview Start -->
+	<div id="Overview" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Overview:</h4></div>
+            <p><strong>"Wasteland Chronicles: The Fallen' Saga,"</strong> is a 2D Pixel Top Down RPG, with a turn based battle system and leveling up functions within.</p>
+            <p>This will be based around the 'Fallout' franchise as will include Vault Dweller as main character and dog meat will be the main weapon used to battle.</p>
+            <hr>
+            <p>In "Wasteland Chronicles: The Fallen' Saga," the player will delve into a world scarred by the aftermath of a devastating nuclear cataclysm.</p>
+            <p>Set in a desolate wasteland where the remnants of humanity cling to survival amidst the ruins of civilization, the game unfolds an epic tale of resilience, exploration, and the struggle for hope in the face of despair.</p>
+            <hr>
+            <p>As the player ventures through the rugged terrain, they encounter a myriad of challenges, from mutated creatures prowling the barren landscapes to rival factions vying for dominance over dwindling resources.</p>
+            <p>Amidst this chaos, the protagonist emerges a lone survivor with a mysterious past, driven by a relentless desire to uncover the truth behind the apocalypse and carve out a new future for humanity.</p>
+            <hr>
+            <p>Throughout their journey, the player navigates treacherous environments, forge alliances with disparate factions, and confront the moral dilemmas that define life in the wasteland.</p>
+            <p>Every decision made, every ally gained or lost, shapes the unfolding narrative, leading to multiple paths and endings that reflect the consequences of their choices.</p>
+            <hr>
+            <p>As the story unfolds, the player uncovers the dark secrets buried beneath the surface of the wasteland, confronting the ghosts of the past and the specter of an uncertain future.</p>
+            <p>Amidst the chaos and devastation, they discover moments of camaraderie, heroism, and redemption, weaving together a tale of resilience and humanity's enduring spirit in the face of adversity.</p>
+            <hr>
+            <p>"Wasteland Chronicles: The Fallen' Saga" is a gripping odyssey through a world ravaged by catastrophe, where survival is not merely a matter of strength, but of courage, cunning, and the bonds forged in the crucible of adversity.</p>
+        </div>
+	</div>
+	<!-- Overview END -->
+
+    <!-- ProblemStatement Start -->
+	<div id="ProblemStatement" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Problem Statement Inc Business Objectives:</h4></div>
+            <p>For developing "Wasteland Chronicles: The Fallen' Saga," a post-apocalyptic RPG game, a structured development methodology is essential to ensure efficient progress, effective collaboration, and successful delivery of the final product.</p>
+
+            <p><strong>Problem:</strong></p>
+            <p>Wasteland Chronicles: The Fallen Saga is a 2D top-down pixel game set in a post-apocalyptic world where players must navigate through treacherous wastelands, scavenging for resources, battling enemies, and uncovering the secrets of a fallen civilization. However, the game lacks a cohesive narrative structure, engaging gameplay mechanics, and visually appealing graphics, hindering its potential for success in the competitive gaming market.
+   
+            <p><strong>Solution:</strong></p>
+            <p>To address these issues and elevate Wasteland Chronicles: The Fallen Saga to a higher standard, we propose a comprehensive overhaul of the game. This includes implementing a compelling storyline with well-developed characters, refining gameplay mechanics to offer a balanced and immersive experience, and enhancing visual elements to create an atmospheric and captivating world.</p>
+            
+            <p><strong>Approach:</strong></p>
+            <ol>
+                <li>Storyline Development: Collaborate with experienced writers to craft a rich and immersive narrative that draws players into the post-apocalyptic world of Wasteland Chronicles. Focus on character development, world-building, and impactful plot twists to keep players engaged from start to finish.</li>
+                <li>Gameplay Mechanics Refinement: Conduct thorough playtesting sessions to identify areas for improvement in gameplay mechanics such as combat, exploration, and resource management. Introduce new features such as crafting, base-building, and faction alliances to add depth and variety to the gameplay experience.</li>
+                <li>Visual Enhancements: Work closely with talented artists to redesign character sprites, environments, and animations, ensuring a visually stunning aesthetic that captures the gritty and desolate atmosphere of the wasteland. Utilize pixel art techniques to create detailed landscapes, dynamic lighting effects, and visually distinct enemy designs.</li>
+                <li>User Interface Optimization: Streamline the user interface to improve accessibility and usability for players of all skill levels. Implement intuitive controls, clear navigation menus, and informative tooltips to enhance the overall user experience and minimize frustration.</li>
+                <li>Quality Assurance Testing: Conduct rigorous testing across various platforms and devices to identify and address any bugs, glitches, or performance issues. Solicit feedback from beta testers and incorporate their suggestions to refine and polish the game before release.</li>
+            </ol>
+            <p><strong>Success Criteria:</strong></p>
+            <ol>
+                <li>Critical Acclaim: Receive positive reviews from both players and critics, praising the game's engaging storyline, polished gameplay mechanics, and visually stunning graphics.</li>
+                <li>Player Engagement: Achieve high levels of player engagement and retention, evidenced by a growing player base, active community forums, and sustained gameplay sessions.</li>
+                <li>Commercial Success: Generate significant revenue through sales, microtransactions, and downloadable content, demonstrating the game's viability in the competitive gaming market.</li>
+                <li>Awards and Recognition: Receive nominations and awards from prestigious gaming industry events and publications, recognizing Wasteland Chronicles: The Fallen Saga as a standout title in the 2D pixel game genre.</li>
+            </ol>
+        </div>
+    </div>
+    <!-- ProblemStatement END -->
+
+    <!-- StakeholderAnalysis Start -->
+	<div id="StakeholderAnalysis" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Team and Stakeholder Analysis Plan:</h4></div>
+            <p><strong>Stakeholders:</strong></p>
+            <ul>
+                <li>Game Developers: The core team responsible for designing, programming, and testing the game.</li>
+                <li>Publishers: Entities responsible for funding, marketing, and distributing the game.</li>
+                <li>Players: The target audience who will purchase and play the game.</li>
+                <li>Writers: Individuals tasked with crafting the game's narrative and dialogue.</li>
+                <li>Artists: Graphic designers and animators responsible for creating visual assets.</li>
+                <li>Quality Assurance Testers: Individuals responsible for identifying and reporting bugs, glitches, and other issues during the testing phase.</li>
+                <li>Community Managers: Individuals responsible for engaging with the player community, providing support, and gathering feedback.</li>
+            </ul>
+            <p><strong>Team Members:</strong></p>
+            <ul>
+                <li>Game Director: Oversees the entire development process, ensuring that the project stays on track and aligns with the vision.</li>
+                <li>Lead Programmer: Responsible for coding the game mechanics, implementing features, and optimizing performance.</li>
+                <li>Lead Artist: Oversees the art direction of the game, coordinating with other artists to ensure consistency and quality.</li>
+                <li>Lead Writer: Leads the narrative design, character development, and dialogue writing process.</li>
+            </ul>
+        </div>    
+        <div class="box">
+            <div class="box-header"><h4>Stakeholder Management Plan:</h4></div>
+                <p>Power Interest Map:</p>
+                <img src="/WastelandChronicles/images/Wireframes/PowerInterestGrid.PNG" width="50%;" height="50%;"/>
+                <p>Daily Morning Meetings:</p>
+                <ul>
+                    <li>Game Developers</li>
+                    <li>Writers</li>
+                </ul>
+                <p>Weekly Meetings:</p>
+                <ul>
+                    <li>Lead Programmer</li>
+                    <li>Lead Artist</li>
+                    <li>Lead Writer</li>
+                </ul>
+                <p>Monthly Meetings:</p>
+                <ul>
+                    <li>Quality Assurance Tester</li>
+                    <li>Community Managers</li>
+                    <li>Game Director</li>
+                    <li>Publishers</li>
+                </ul>           
+            </div>
+    </div>
+    <!-- StakeholderAnalysis END -->
+
+    <!-- BusinessObjectives Start -->
+	<div id="BusinessObjectives" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Business Objectives:</h4></div>
+            <p>In the wake of a devastating nuclear apocalypse, "Wasteland Chronicles: The Fallen' Saga" emerges as an immersive post-apocalyptic RPG adventure poised to capture the imaginations of players worldwide.</p>
+            <p>The game aims to address several key business objectives:</p>
+            <p><strong>Market Penetration:</strong></p>
+            <ul>
+                <li>With an engaging storyline, strategic gameplay mechanics, and visually captivating pixel art style, the game seeks to penetrate the rapidly expanding market of indie RPG enthusiasts, drawing attention from both seasoned players and newcomers to the genre.</li>
+            </ul>
+            <p><strong>Player Engagement and Retention:</strong></p> 
+            <ul>
+                <li>By offering a richly detailed game world teeming with exploration opportunities, diverse characters, and morally ambiguous choices, "Wasteland Chronicles" aims to foster deep player engagement and ensure long-term retention, enticing players to return to the game time and again.</li>
+            </ul>
+            <p><strong>Monetization and Revenue Generation:</strong></p> 
+            <ul>
+                <li>Through a combination of strategic in-game purchases, cosmetic enhancements, and optional content expansions, the game seeks to generate sustainable revenue streams, allowing for ongoing development, updates, and expansion of the game universe.</li>
+            </ul>
+            <p><strong>Brand Building and Recognition:</strong></p>
+            <ul>
+                <li>"Wasteland Chronicles" aims to establish itself as a flagship title within the indie gaming community, leveraging positive player feedback, word-of-mouth marketing, and social media engagement to build brand recognition and solidify its position in the market.</li>
+            </ul>
+            <p><strong>Community Development and Support:</strong></p>
+            <ul>
+                <li>By fostering an active and engaged player community through forums, social media channels, and in-game events, the game aims to cultivate a dedicated fan base, encouraging player-driven content creation, feedback, and support.</li>
+            </ul>
+            <p>In summary, "Wasteland Chronicles: The Fallen' Saga" seeks to achieve significant market penetration, player engagement, and revenue generation while establishing itself as a leading title in the indie RPG genre through strategic business objectives and a commitment to quality, innovation, and player satisfaction.</p>
+		</div>
+	</div>
+	<!-- BusinessObjectives END --> 
+	<!-- RequirementAnalysis Start -->	
+	<div id="RequirementAnalysis" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Requirement Analysis</h4></div>
+			<p>These requirements will outline the key features and mechanics for a wasteland apocalypse-style game with a normal leveling system and turn-based combat akin to Pokemon, offering players an immersive and strategic experience in a harsh and unforgiving world.</p>
+            <ul>
+                <li><strong>Setting and Atmosphere:</strong></li>
+                <ul>
+                    <li>Create a grim and desolate post-apocalyptic world, devoid of civilization, with barren landscapes, ruined cities, and mutated creatures.</li>
+                    <li>Establish a dark and oppressive atmosphere, highlighting the struggle for survival amidst the remnants of society.</li>
+                </ul>                
+                <li><strong>Character Progression:</strong></li>
+                <ul>
+                    <li>Implement a traditional leveling system where experience points are earned through battles and completing quests, leading to increased stats and abilities over time.</li>
+                </ul>
+                <li><strong>Exploration and Encounters:</strong></li>
+                <ul>
+                    <li>Design a vast and open wasteland for players to explore, filled with abandoned buildings, underground bunkers, and hidden treasures.
+                    <li>Populate the world with diverse encounters, including hostile mutants, scavengers, rival factions, and environmental hazards.</li>
+                </ul>
+                
+                <li><strong>Turn-Based Combat:</strong></li>
+                <ul>
+                    <li>Develop a turn-based combat system similar to Pokemon, where battles take place in separate instances with a grid-based layout.
+                    <li>Include a variety of attacks, abilities, and tactics for both player characters and enemies, with elements of strategy and resource management.</li>
+                </ul>
+                <li><strong>Mutations and Abilities:</strong></li>
+                <ul>
+                    <li>Introduce a mutation system where characters can gain unique abilities and traits through exposure to radiation or experimental technology.
+                </ul>
+                <li><strong>Faction Dynamics:</strong></li>
+                <ul>
+                    <li>Implement a faction system where players can align with different groups competing for control over the wasteland.
+                    <li>Choices made during quests and interactions with factions should influence alliances, reputation, and ultimately, the game's outcome.</li>
+                </ul>
+                <li><strong>Item Management and Crafting:</strong></li>
+                <ul>
+                    <li>Include a robust inventory management system for collecting resources, weapons, armor, and consumables.
+                    <li>Enable players to scavenge for materials and craft makeshift gear, weapons, and items to aid in survival and combat.</li>
+                </ul>
+                <li><strong>Storyline and Quests:</strong></li>
+                <ul>
+                    <li>Create a compelling main storyline with branching paths and multiple endings influenced by player choices.
+                    <li>Populate the world with side quests and NPC-driven narratives that provide depth to the setting and opportunities for exploration.</li>
+                </ul>
+                <li><strong>Art Style and Sound Design:</strong></li>
+                <ul>
+                    <li>Utilize pixel art graphics to evoke a retro aesthetic while portraying the gritty and harsh reality of the wasteland.
+                    <li>Enhance immersion with ambient sound effects, atmospheric music, and thematic audio cues that reflect the desolate setting.</li>
+                </ul>
+            </ul>    
+		</div>
+	</div>
+	<!-- Requirement Analysis END -->
+
+	<!-- RequirementsSurvey Start -->
+	<div id="RequirementsSurvey" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Requirement Survey:</h4></div>
+            <p>Thank you for participating in our survey! Your feedback is crucial in shaping the development of "Wasteland Chronicles: The Fallen' Saga," an upcoming post-apocalyptic RPG adventure.</p>
+            <p>Please take a few moments to answer the following questions:</p>
+            <p><strong>Player Profile:</strong></p>
+            <ul>    
+                <li>Age:</li>
+                <li>Gender:</li>
+                <li>Location (Country/Region):</li>
+                <li>How often do you play video games?</li>
+            </ul>
+            <p><strong>Gameplay Preferences:</strong></p>
+            <ul>
+                <li>What type of RPGs do you enjoy playing? (e.g., turn-based, action, open-world)</li>
+                <li>How important is player choice and decision-making in an RPG for you?</li>
+                <li>Do you prefer linear storytelling or branching narratives with multiple endings?</li>
+            </ul>
+            <p><strong>Features and Mechanics:</strong></p>
+            <ul>
+                <li>Which features are essential for you in an RPG game like "Wasteland Chronicles"? (e.g., character customization, exploration, crafting, faction dynamics)</li>
+                <li>What combat system do you prefer? (e.g., turn-based, real-time)</li>
+                <li>Would you like to see survival elements such as resource management and environmental hazards in the game?</li>
+            </ul>
+            <p><strong>Art and Aesthetics:</strong></p>
+            <ul>
+                <li>What art style do you prefer for pixel art games? (e.g., retro, modern, dystopian)</li>
+                <li>How important are visuals and atmosphere in creating immersion for you?</li>
+                <li>Do you have any preferences for the color scheme or overall visual tone of the game?</li>
+            </ul>
+            <p><strong>Platform and Accessibility:</strong></p>
+            <ul>
+                <li>On which platforms do you prefer to play RPG games? (e.g., PC, consoles, mobile)</li>
+                <li>How important is cross-platform compatibility for you?</li>
+                <li>Do you have any accessibility requirements or preferences for controls and user interface?</li>
+            </ul>
+            <p><strong>Community and Engagement:</strong></p>
+            <ul>
+                <li>How important is community interaction and engagement in an RPG game for you?</li>
+                <li>Would you be interested in participating in beta testing or providing feedback during development?</li>
+                <li>Are there any specific community features you would like to see implemented in the game?</li>
+            </ul>
+            <p><strong>Additional Comments:</strong></p>
+            <ul>
+                <li>Please share any additional thoughts, suggestions, or feedback you have for "Wasteland Chronicles: The Fallen' Saga."</li>
+            </ul>
+            <p>Thank you for taking the time to complete our survey!</p>
+            <p>Your input is invaluable in shaping the development of "Wasteland Chronicles: The Fallen' Saga" into an unforgettable gaming experience.</p>
+        </div>
+        <div class="box">
+            <div class="box-header"><h4>Requirements Analysis Survey:</h4></div>
+            <p>Here's an example of possible results presented as a table of statistics for the "Wasteland Chronicles: The Fallen' Saga" survey:</p> 
+            <table class="maintable">
+                <tr><td> Survey Question</td><td> Possible Responses</td><td>Percentage of Respondents</td></tr>
+                <tr><td> Player Profile</td><td></td><td></td></tr>
+                <tr><td> Age</td><td> Under 18, 18-24, 25-34, 35-44, 45+</td><td></td></tr>
+                <tr><td> Gender</td><td> Male, Female, Other, Prefer not to say</td><td></td></tr>
+                <tr><td> Location (Country/Region)</td><td> [Various countries/regions]</td><td></td></tr>
+                <tr><td> How often do you play video games?</td><td> Daily, Several times a week, Occasionally, Rarely</td><td></td></tr>
+                <tr><td> **Gameplay Preferences**</td><td></td><td></td></tr>
+                <tr><td> Type of RPGs enjoyed playing</td><td> Turn-based, Action, Open-world, Story-driven, etc. </td><td></td></tr>
+                <tr><td> Importance of player choice</td><td> Very important, Somewhat important, Not important </td><td></td></tr>
+                <tr><td> Preferences for linear vs. branching narratives </td><td> Linear, Branching, No preference</td><td></td></tr>
+                <tr><td> Features and Mechanics</td><td></td><td></td></tr>
+                <tr><td> Essential features in an RPG game</td><td> Character customization, Exploration, Crafting, etc.</td><td></td></tr>
+                <tr><td> Preferred combat system</td><td> Turn-based, Real-time, Hybrid</td><td></td></tr>
+                <tr><td> Interest in survival elements</td><td> Very interested, Somewhat interested, Not interested</td><td></td></tr>
+                <tr><td> Art and Aesthetics</td><td></td><td></td></tr>
+                <tr><td> Preferred art style for pixel art games</td><td> Retro, Modern, Dystopian, Other</td><td></td></tr>
+                <tr><td> Importance of visuals and atmosphere</td><td> Very important, Somewhat important, Not important  </td><td></td></tr>
+                <tr><td> Preferences for color scheme and visual tone </td><td> [Various preferences]</td><td></td></tr>
+                <tr><td> Platform and Accessibility</td><td>                           </td><td></td></tr>
+                <tr><td> Preferred platforms for playing RPG</td><td> PC, Consoles, Mobile, All of the above</td><td></td></tr>
+                <tr><td> Importance of cross-platform compatibility </td><td> Very important, Somewhat important, Not important  </td><td></td></tr>
+                <tr><td> Accessibility requirements/preferences</td><td> [Various requirements/preferences]</td><td></td></tr>
+                <tr><td> **Community and Engagement**</td><td></td><td></td></tr>
+                <tr><td> Importance of community interaction</td><td> Very important, Somewhat important, Not important  </td><td></td></tr>
+                <tr><td> Interest in participating in beta testing</td><td> Very interested, Somewhat interested, Not interested</td><td></td></tr>
+                <tr><td> Preferences for community features</td><td> Forums, Social media integration, In-game events, etc.</td><td></td></tr>
+            </table>
+        </div>
+    </div>
+    <!-- RequirementsSurvey END -->
+
+	<!-- ProjectMethodology Start -->
+	<div id="ProjectMethodology" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Dependancies:</h4></div>
+            <ul>
+                <li>Google Font - Title font, in game font.</li>
+                <li>Flipbook</li>
+                <li>.net api - score system</li>
+                <li>Local storage for save file</li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-header"><h4>Developement Deployment:</h4></div>
+            <p>Agile MVP style Dev process, deployed on web via html.</p>
+        </div>    
+    </div>
+	<!-- ProjectMethodology END -->
+
+	<!-- Wireframes Start -->
+	<div id="Wireframes" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Wireframes</h4></div>
+            <img src="/WastelandChronicles/images/Wireframes/TheFallenWireframe.PNG" width="90%; height 60%;">
+
+            <p>Start Page Draft:</p>
+            <ul>
+                <li>The start page will feature the game's title and logo (Yet to be designed).</li>
+                <li>Below the title, include options such as "Start", "Options" and "Exit".</li>
+                <li>A background image or artwork will sets the tone for the game's post-apocalyptic setting.</li>
+                <li>Optionally, include additional elements such as credits or version information.</li>
+                <img src="/WastelandChronicles/images/homepagee.PNG" width="70%; height 50%;">
+            </ul>
+		</div>
+	</div>
+	<!-- Wireframes END -->
+
+	<!-- User Stories Start -->
+	<div id="UserStories" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>User Stories:</h4></div>
+			<ul>
+				<li>As a player:</li>
+                <ul>
+                    <li>I want to explore the vast and desolate wasteland, encountering various environments, creatures, and NPCs, to uncover hidden secrets, loot valuable resources, and discover the remnants of the old world.</li>
+                    <li>I want to engage in turn-based combat encounters with mutated creatures, rival scavengers, and other threats, using strategic tactics and utilizing my character's abilities and mutations to emerge victorious</li>
+                    <li>I want to progress my character by earning experience points through battles and completing quests, leveling up to improve my stats, unlock new abilities, and adapt to the challenges of the wasteland.</li>
+                    <li>I want to align with different factions vying for control over the wasteland, making choices that affect my reputation, alliances, and access to unique quests, rewards, and storylines.</li>
+                    <li>I want to scavenge for resources and craft beasts/monsters, to enhance my survival chances and overcome the dangers of the wasteland.</li>
+                    <li>I want to embark on a main storyline with branching paths and multiple endings, influenced by my actions, choices, and interactions with NPCs and factions, to experience a personalized narrative journey.</li>
+                    <li>I want to engage in side quests and NPC-driven narratives, to delve deeper into the lore of the wasteland, uncovering hidden stories, and forging meaningful relationships with other survivors.</li>
+                    <li>I want to experience an atmospheric and immersive game world, with pixel art graphics, ambient sound effects, and thematic music, that evoke the harsh and unforgiving reality of the post-apocalyptic wasteland.</li>
+                </ul>
+			</ul>
+		</div>
+        <div class="box">
+            <div class="box-header"><h4>Gantt Chart:</h4></div>
+            <img src="/WastelandChronicles/images/Wireframes/TheFallenGanttChart.PNG" width="50%;" height="50%;">
+        </div>  
+		<div class="box">
+			<div class="box-header"><h4>User Stories:</h4></div>
+            <table class="maintable">
+                <tr><th>ID</th><th>User Story</th><th>MoSCoW</th><th>T-Shirt Sizing</th></tr>
+                <tr><td>1</td><td>As a player, I want to explore diverse environments, from ruined cities to barren wastelands.</td><td>Must have</td><td><img src="/WastelandChronicles/images/TshirtSizings/xl.png" width="50vw"></td></tr>
+                <tr><td>2</td><td>As a player, I want to engage in turn-based combat encounters against mutated creatures.</td><td>Must have</td><td><img src="/WastelandChronicles/images/TshirtSizings/m.png" width="50vw"></td></tr>
+                <tr><td>3</td><td>As a player, I want to create new beasts/monsters to use in battles from recipes.</td><td>Should have</td><td><img src="/WastelandChronicles/images/TshirtSizings/m.png" width="50vw"></td></tr>
+                <tr><td>4</td><td>As a player, I want to interact with diverse NPCs, each with their own stories, quests, and motivations.</td><td>Could have</td><td><img src="/WastelandChronicles/images/TshirtSizings/xl.png" width="50vw"></td></tr>
+                <tr><td>5</td><td>As a player, I want to make choices that impact the game world and storyline, leading to multiple endings.</td><td>Should have</td><td><img src="/WastelandChronicles/images/TshirtSizings/xl.png" width="50vw"></td></tr>
+                <tr><td>6</td><td>As a player, I want to join and align with different factions, each offering unique quests and rewards.</td><td>Could have</td><td><img src="/WastelandChronicles/images/TshirtSizings/m.png" width="50vw"></td></tr>
+                <tr><td>7</td><td>As a player, I want to engage in trading and bartering with NPCs and other players to obtain rare items.</td><td>Could have</td><td><img src="/WastelandChronicles/images/TshirtSizings/m.png" width="50vw"></td></tr>
+                <tr><td>8</td><td>As a player, I want to participate in randomized events and encounters that add variety to gameplay.</td><td>Should have</td><td><img src="/WastelandChronicles/images/TshirtSizings/m.png" width="50vw"></td></tr>
+                <tr><td>9</td><td>As a player, I want to uncover hidden secrets and lore scattered throughout the wasteland.</td><td>Could have</td><td><img src="/WastelandChronicles/images/TshirtSizings/s.png" width="50vw"></td></tr>
+                <tr><td>10</td><td>As a player, I want to experience immersive storytelling with rich dialogue and character interactions.</td><td>Must have</td><td><img src="/WastelandChronicles/images/TshirtSizings/xl.png" width="50vw"></td></tr>
+            </table>
+            <p><strong>Explanation of MoSCoW annotations:</strong></p>
+            <ul>
+                <li><strong>Must have:</strong> Critical requirements that are essential for the core functionality and player experience of the game.</li>
+                <li><strong>Should have:</strong> Important requirements that enhance gameplay and provide additional depth or variety.</li>
+                <li><strong>Could have:</strong> Nice-to-have features that are desirable but not crucial for the initial release.</li>
+            </ul>
+        </div>    
+  
+	</div>
+	<!-- User Stories END -->
+
+	<!-- To Do Tasks Start -->
+	<div id="ToDoTasks" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>To Do Tasks:</h4></div>
+			<p>Here's a breakdown of tasks for defining the main character, enemies, leveling system, and battle system:</p>
+            <p><strong>Main Character</strong></p>
+            <ul>
+                <li>Design the main character's appearance, including gender, clothing, and overall aesthetic, to reflect the post-apocalyptic setting.</li>
+                <li>Define the main character's backstory and motivations, incorporating elements of survival, loss, and resilience.</li>
+                <li>Determine the main character's starting attributes and abilities, considering customization options for players.</li>
+            </ul>
+            <p><strong>Enemies</strong></p>
+            <ul>
+                <li>Create a variety of enemy types, including mutated creatures, hostile scavengers, robotic drones, and other post-apocalyptic threats.</li>
+                <li>Design each enemy type with distinct behaviors, strengths, weaknesses, and attack patterns to provide strategic depth in combat encounters.</li>
+                <li>Establish enemy factions and territories within the game world, influencing their presence and behavior based on player actions and progression.</li>
+            </ul>
+            <p><strong>Leveling System</strong></p>
+            <ul>
+                <li>Define the leveling system, including experience point progression, attribute improvements, and ability unlocks.</li>
+                <li>Determine the attributes that players can improve upon leveling up, such as health, stamina, strength, agility, intelligence, etc.</li>
+                <li>Establish a balanced experience curve that rewards players for both combat victories and quest completion, ensuring a sense of progression throughout the game.</li>
+            </ul>
+            <p><strong>Battle System</strong></p>
+            <ul>
+                <li>Decide on the turn-based battle system mechanics, including initiative order, action points, and combat actions.</li>
+                <li>Define the grid-based battle layout, determining movement range, attack range, and line of sight mechanics.</li>
+                <li>Design a variety of combat abilities and special moves for the main character, allowing for tactical decisions and strategic synergy with party members.</li>
+                <li>Implement status effects, environmental hazards, and other factors that influence combat dynamics and add depth to battles.</li>
+            </ul>
+            <p>Each of these tasks is crucial for defining the core aspects of the game, including the main character's role, the challenges they face, and the mechanics that drive progression and gameplay in the post-apocalyptic wasteland.</p>     
+		</div>
+	</div>
+	<!-- To Do Tasks END -->
+
+    <!-- Test Start -->
+	<div id="Test" class="tabcontent">
+		<div class="box">
+			<div class="box-header"><h4>Test:</h4></div>
+
+            <table class="maintable">
+                <tr><th>Test ID</th><th>Test Description</th><th>Test Completed Y/N</th></tr>
+                <tr><td>1</td><td>Confirm that hero moves in the correct direction on press of arrow key.<br> Character Movement Test: <a href="http://fb24.decoded.com/WastelandChronicles/html/ProjectPlanning/CharacterMovementTest.html" target="_blank">Click Here</a>.</td><td>Y</td></tr>
+                <tr><td>2</td><td>Confirm volume slider output is recorded correctly in console log.<br> Volume Control Test: <a href="http://fb24.decoded.com/WastelandChronicles/html/ProjectPlanning/VolumeTest.html" target="_blank">Click Here</a>.</td><td>Y</td></tr>
+                <tr><td>3</td><td>Confirm when hero's health reduces to 0, a game over state appears.<br> Game Over State Test: <a href="http://fb24.decoded.com/WastelandChronicles/html/ProjectPlanning/GameOverTest.html" target="_blank">Click Here</a>.</td><td>Y</td></tr>
+
+                <tr><td>4</td><td>Confirm hero sprite appears on screen / drawn to screen.<br> See Example Image 1.</td><td>Y</td></tr>
+                <tr><td>5</td><td>Confirm hero collision with walls and NPC's.</td><td>N</td></tr>
+                <tr><td>6</td><td>Confirm speach between hero and NPC's shows and linked to correct npc.</td><td>N</td></tr>
+                <tr><td>7</td><td>Confirm Cutscene system works, for hero moving to set spots.</td><td>N</td></tr>
+
+            </table>
+            <p>Example Image 1:</p>
+            <img src="/WastelandChronicles/images/GameScreenshot.PNG" width="30%;" height="30%;"/>
+		</div>
+	</div>
+	<!-- Test END -->
+
+</body>
+</html>

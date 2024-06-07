@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Wasteland Chronicles: The Fallen Saga</title>
+
+    <!-- Weather CSS-->
+    <link href="/WastelandChronicles/Weather/Weather.css" type="text/css" rel="stylesheet">
+
+    <!-- Main Game CSS-->
+    <link href="/WastelandChronicles/css/global.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/TextMessage.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/SceneTransition.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/KeyboardMenu.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/Hud.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/TitleScreen.css" type="text/css" rel="stylesheet">
+    
+    <!-- Battle CSS -->
+    <link href="/WastelandChronicles/css/Battle.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/Combatant.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/SubmissionMenu.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/Team.css" type="text/css" rel="stylesheet">
+    <link href="/WastelandChronicles/css/Menus.css" type="text/css" rel="stylesheet">
+
+    <!-- character designed in a 32 by 32 pixel -->
+    <!-- screens designed in a 16 by 16 design-->
+
+</head>
+<body onload="weather()">
+
+<button id="weatherBtn" class="weatherBtn">Weather Forecast</button>
+
+<div class="game-container">
+    <canvas class="game-canvas" width="352" height="198"></canvas>
+</div>
+
+<div id="weatherModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>5 Day Forecast!</h2>
+        </div>
+        <div class="modal-body">
+            <ul id="weather"></ul>
+        </div>
+        <div class="modal-footer">
+            <h3>Now get back to the game!</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Weather -->
+<script src="/WastelandChronicles/Weather/Weather.js"></script>
+<script src="/WastelandChronicles/Weather/modal.js"></script>
+
+<!-- Content -->
+<script src="/WastelandChronicles/Content/Creatures.js"></script>
+<script src="/WastelandChronicles/Content/actions.js"></script>
+<script src="/WastelandChronicles/Content/enemies.js"></script>
+
+<!-- State -->
+<script src="/WastelandChronicles/State/PlayerState.js"></script>
+
+<!-- Scripts -->
+<script src="/WastelandChronicles/js/utils.js"></script>
+<script src="/WastelandChronicles/js/DirectionInput.js"></script>
+<script src="/WastelandChronicles/js/Overworld.js"></script>
+<script src="/WastelandChronicles/js/GameObject.js"></script>
+<script src="/WastelandChronicles/js/Person.js"></script>
+<script src="/WastelandChronicles/js/CreatureStone.js"></script>
+<script src="/WastelandChronicles/js/Sprite.js"></script>
+<script src="/WastelandChronicles/js/OverworldMap.js"></script>
+<script src="/WastelandChronicles/js/TextMessage.js"></script>
+<script src="/WastelandChronicles/js/OverworldEvent.js"></script>
+<script src="/WastelandChronicles/js/KeypressListener.js"></script>
+<script src="/WastelandChronicles/js/RevealingText.js"></script>
+<script src="/WastelandChronicles/js/SceneTransition.js"></script>
+<script src="/WastelandChronicles/js/KeyboardMenu.js"></script>
+<script src="/WastelandChronicles/js/Hud.js"></script>
+<script src="/WastelandChronicles/js/PauseMenu.js"></script>
+<script src="/WastelandChronicles/js/CraftingMenu.js"></script>
+<script src="/WastelandChronicles/js/Progress.js"></script>
+<script src="/WastelandChronicles/js/TitleScreen.js"></script>
+
+<!-- Battle JS -->
+<script src="/WastelandChronicles/Battle/Battle.js"></script>
+<script src="/WastelandChronicles/Battle/Combatant.js"></script>
+<script src="/WastelandChronicles/Battle/SubmissionMenu.js"></script>
+<script src="/WastelandChronicles/Battle/ReplacementMenu.js"></script>
+<script src="/WastelandChronicles/Battle/Team.js"></script>
+<script src="/WastelandChronicles/Battle/BattleEvent.js"></script>
+<script src="/WastelandChronicles/Battle/TurnCycle.js"></script>
+<script src="/WastelandChronicles/Battle/BattleAnimations.js"></script>
+
+
+<!--Always ensure 'init.js' is last script loaded-->
+<script src="/WastelandChronicles/js/init.js"></script>
+
+</body>
+</html>

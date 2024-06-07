@@ -1,0 +1,28 @@
+.Team {
+    display: flex;
+    position: absolute;
+    top: 6px;
+    gap: 2px;
+}
+.Team[data-team="player"] {
+    left: 4px;
+}
+.Team[data-team="enemy"] {
+    right: 4px;
+}
+
+.Team .dead-creature {
+    display: none;
+}
+
+.Team .active-creature-indicator {
+    display: none;
+}
+
+.Team [data-dead="true"] .dead-creature {
+    display: block;
+}
+
+.Team [data-active="true"] .active-creature-indicator {
+    display: block;
+}

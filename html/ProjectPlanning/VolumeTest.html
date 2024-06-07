@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Slider Test</title>
+</head>
+<body>
+    <p>Use Console (F12) to view console log report.</p>
+    <input type="range" min="0" max="100" value="50" id="volumeSlider">
+    <p id="volumeValue">Volume Level: 50</p>
+
+    <script>
+        var volumeSlider = document.getElementById("volumeSlider");
+        var volumeValue = document.getElementById("volumeValue");
+
+        volumeSlider.addEventListener("input", function() {
+            var volume = volumeSlider.value;
+            volumeValue.textContent = "Volume Level: " + volume;
+            console.log("Volume changed to: " + volume);
+        });
+    </script>
+</body>
+</html>

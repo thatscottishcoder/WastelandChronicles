@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over Test</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Game Over Test: hero health will decrease by 10 every second until zero then alert will appear to say game over.</p>
+    <canvas id="gameCanvas" width="400" height="200"></canvas>
+
+    <script>
+        // Get the canvas element
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let heroHealth = 100; // Initial hero health
+
+        // Function to draw the hero's health
+        function drawHeroHealth() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'green';
+            ctx.fillRect(10, 10, heroHealth * 3, 20); // Represent health bar
+        }
+
+        // Function to decrement hero's health
+        function decrementHealth() {
+            if (heroHealth > 0) {
+                heroHealth -= 10;
+                drawHeroHealth(); // Update the health bar
+            } else {
+                clearInterval(interval); // Stop the decrementing interval
+                alert('Game Over'); // Show game over message
+            }
+        }
+
+        // Call decrementHealth function every 3 seconds
+        const interval = setInterval(decrementHealth, 1000);
+
+        // Initial draw of the health bar
+        drawHeroHealth();
+
+    </script>
+</body>
+</html>

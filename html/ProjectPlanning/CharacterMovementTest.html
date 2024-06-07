@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Character Movement</title>
+<style>
+    canvas {border: 1px solid #000;}
+</style>
+</head>
+
+<body>
+<p>Test Case to see if character moves on press of arrow key and movement is in the correct way.</p>
+<p>Use Console (F12) to view console log report.</p>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var xPos = 50;
+    var yPos = 50;
+
+    function drawCharacter() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.arc(xPos, yPos, 10, 0, Math.PI * 2);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function handleKeyPress(e) {
+        switch(e.key) {
+            case "ArrowUp":
+                yPos -= 10;
+                break;
+            case "ArrowDown":
+                yPos += 10;
+                break;
+            case "ArrowLeft":
+                xPos -= 10;
+                break;
+            case "ArrowRight":
+                xPos += 10;
+                break;
+        }
+        
+    console.log("Arrow key pressed: " + e.key);
+        drawCharacter();
+    }
+
+    document.addEventListener("keydown", handleKeyPress);
+</script>
+</body>
+</html>
